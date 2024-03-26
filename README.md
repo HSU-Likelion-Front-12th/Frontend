@@ -31,7 +31,7 @@ ex)김멋사
 
 <div>
   <a href="https://github.com/Navi-Up">
-    <img src="hhttps://avatars.githubusercontent.com/u/87771727?v=4" width="100" style="max-width: 100%;">
+    <img src="https://avatars.githubusercontent.com/u/87771727?v=4" width="100" style="max-width: 100%;">
   </a>
   <a href="https://github.com/nyun-nye">
     <img src="https://avatars.githubusercontent.com/u/138736197?v=4" width="100" style="max-width: 100%;">
