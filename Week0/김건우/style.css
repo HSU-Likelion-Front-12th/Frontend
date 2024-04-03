@@ -1,0 +1,341 @@
+html, body{
+    margin: 0 auto;
+    padding: 0px;
+    
+}
+* {
+    box-sizing: border-box;
+}
+/* header starts */
+.header{
+    padding-left: 20vw;
+    padding-right: 20vw;
+    height: 7.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    width: 17rem;
+    cursor: pointer;
+} 
+
+.nav{
+    display: flex;
+    gap: 5vw;
+
+}
+
+.nav > * {
+    color: #000;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    flex: 1;
+    cursor: pointer;
+    
+}
+
+/* header ends */
+
+/* intro starts */
+.intro{
+    padding: 14rem 18vw 14rem 18vw;
+    background-color: #4A86FF;
+    text-align: center;
+    
+}
+
+.intro > div{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+
+}
+/* intro ends */
+
+/* about starts */
+.section{
+    background-color: #F3F5FF;
+    padding-left: 18vw;
+    padding-right: 18vw;
+    padding-top: 4rem;
+    padding-bottom: 8rem;
+}
+.section > :nth-child(1){
+    color: #4A86FF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 4.375rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 3.7rem;
+}
+.section > :nth-child(2){
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+}
+
+.profile-block{
+    aspect-ratio: 4 / 5;
+    width: 23.5rem;
+    position: relative;
+    border-radius: 16px;
+    border: 1px solid #EBEDF8;
+    background: #FFF;
+    padding: 2rem 2vw 2rem 2vw;
+}
+#profile-pic{
+    position: relative;
+    margin-bottom: 25px;
+    text-align: center;
+    padding: 0 3.5rem 0 3.5rem;
+    overflow: hidden;
+}
+#profile-pic > img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius: 16px;
+    border: 1px solid #EBEDF8;
+}
+#profile-name{
+    /* width: 111px;
+    height: 48px; */
+    margin: auto auto;
+    margin-bottom: 15px;
+    color: #4A86FF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#profile-phone, #profile-mail, #profile-address{
+    /* width: 300px;
+    height: 40px; */
+    margin: auto auto;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    color: #484A64;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    text-align: start;
+    line-height: normal;
+}
+
+.info-block{
+    display: grid;
+    column-gap: 9vw;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.info-block >:nth-child(3) > div, .info-block >:nth-child(4) >div {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 34px;
+}
+.info-title{
+    margin-top: 23px;
+    margin-bottom: 23px;
+    color: #000;
+    text-align: start;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.info-content{
+    color: #626682;
+    font-family: Inter;
+    text-align: start;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 170%;
+}
+
+/* about ends */
+
+/* hobby starts */
+
+.hobby-blocks{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hobby-blocks > *{
+    aspect-ratio: 1/1;
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid #EBEDF8;
+    background: #FFF;
+}
+
+.block-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    border-radius: 16px 16px 0px 0px;
+    background: #4A86FF;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.block-content{
+    padding: 2.5rem;
+    box-sizing: border-box;
+}
+.block-content > img {
+    aspect-ratio: 9 / 7;
+    width: 100%;
+    border-radius: 8px;
+    background: #EBEDF8;
+}
+
+/* hobby ends */
+/* animation starts */
+
+.fade-in-animation{
+    opacity: 0;
+    transition: all 1.5s;
+}
+.fade-in-animation-delayed{
+    opacity: 0;
+    transition: all 2s;
+}
+/* anmation ends */
+
+/* mediaquery starts */
+
+@media (max-width: 1000px){
+    .header{
+        height: 5rem;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    #logo{
+        width: 10rem;
+    }
+
+    .nav{
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+    }
+    
+    .nav > * {
+        font-size: 1rem;
+        
+    }
+
+    .intro {
+        max-height: 40vh;
+        padding: 4rem 6vw 4rem 6vw;
+    }
+
+    .intro > div{
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 150%;
+    }
+
+    .about{
+        padding-top: 2rem;
+    }
+    .section{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    .section-title{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .section >:nth-child(1){
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+
+    .section > :nth-child(2){
+        flex-direction: column;
+        gap: 16vw;
+    }
+    
+    .info-block{
+        aspect-ratio: 2 / 3;
+        margin: auto auto;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .info-title{
+        font-size: 1.5rem;
+    }
+    .info-content{
+        font-size: 1rem;
+    }
+
+    /* about ends */
+    .profile-block{
+        margin: auto auto;
+        aspect-ratio: 4 / 5;
+        position: relative;
+        border-radius: 16px;
+        border: 1px solid #EBEDF8;
+        background: #FFF;
+        padding: 2rem 5vw 2rem 5vw;
+    }
+
+    #profile-name{
+        font-size: 2rem;
+    }
+    
+    #profile-phone, #profile-mail, #profile-address{
+        gap: 16px;
+        font-size: 1rem;
+    }
+
+    .hobby-blocks{
+        gap: 2rem;
+    }
+
+    .hobby-blocks > *{
+
+        aspect-ratio: 1/1;
+        width: 100%;
+        border-radius: 16px;
+        border: 1px solid #EBEDF8;
+        background: #FFF;
+    }
+    .block-title{
+        font-size: 1.7rem;
+    }
+}
