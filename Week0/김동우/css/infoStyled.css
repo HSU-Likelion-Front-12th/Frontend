@@ -1,0 +1,18 @@
+#info {
+  width: auto;
+  height: 600px;
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 50px;
+  font-style: normal;
+  background-color: #4A86FF;
+}
+
+#info h1 {
+  /* background-color: tomato; */
+  display: flex;
+  padding-top: 150px;
+  align-items: center;
+  /* 텍스트를 수직으로 가운데로 정렬합니다. */
+}

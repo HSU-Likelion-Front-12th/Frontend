@@ -1,0 +1,21 @@
+main {
+  background-color: aquamarine;
+}
+
+main .main-contents {
+  background-color: blueviolet;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  /* 요소를 수평으로 가운데 정렬합니다. */
+  margin: 0 auto;
+}
+
+main .main-contents figcaption {
+  background-color: #4A86FF;
+}
+
+main .main-contents p {
+  background-color: whitesmoke;
+  padding: 20px 50px 20px 50px;
+}
