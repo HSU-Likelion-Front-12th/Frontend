@@ -1,0 +1,19 @@
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav #options {
+  /* background-color: aqua; */
+  display: flex;
+  margin-right: 50px;
+}
+
+nav #options p {
+  /* background-color: yellow; */
+  margin-right: 50px;
+  font-size: 25px;
+  font-weight: bold;
+}
