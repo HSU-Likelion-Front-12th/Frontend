@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+}
+html{
+    text-align: center;
+    background-color: #f3f5ff;
+}
+header {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    display: inline-flex;
+    align-items: center;
+    justify-self: center;
+    gap: 32px;
+}
+
+nav span{
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.portfolio{
+    width: 340px;
+    height: 62px;
+    align-items: center;
+    justify-self: center;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    background-color: #4A86FF;
+}
+
+.intro h1{
+    margin: 0;
+    width: 100%;
+    height: 360px;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 120px */
+}
+
+.title{
+    color: #4A86FF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-top: 60px;
+    margin-bottom: 59px;
+}
+
+.about-left{
+    margin-left: 300px;
+    width: 380px;
+    height: 498px;
+    border-radius: 16px;
+    border: 1px solid #ebedf8;
+    background-color: #ffffff;
+}
+.me{
+    width: 196.078px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.name{
+    color: #4A86FF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 25px;
+}
+.left-content{
+    display: flex;
+}
+.mark{
+    margin-top: 15px;
+    width: 40px;
+    height: 40px;
+    margin-left: 40px;
+}
+.mark>img{
+    margin-bottom: 8px;
+}
+.mark-content{
+    text-align: left;
+    color: #484a64;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 26px;
+    margin-left: 16px;
+}
+.mark-content>p{
+    margin-bottom: 29px;
+}
+.about{
+    display: flex;
+}
+table{
+    margin-left: 40px;
+    width: 700px;
+    height: 500px;
+    text-align: left;
+}
+.about-right th{
+    color: #000000;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    vertical-align: top;
+    height: 50px;
+}
+.about-right td{
+    color: #626682;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 170%;
+    height: 200px;
+    vertical-align: top;
+    width: 350px;
+}
+
+.index{
+    display: flex;
+}
+.index>div{
+    align-items: center;
+    justify-content: center;
+}
+
+.hobbies{
+    width: 380px;
+    height: 377px;
+    margin-top: 80px;
+    margin-right: 20px;
+    border-radius: 16px;
+    border: 1px solid #ebedf8;
+    background-color: #ffffff;
+    display: inline-block;
+}
+.hobbies>div{
+    display: flex;
+    width: 380px;
+    height: 80px;
+    border-radius: 16px 16px 0px 0px;
+    background-color: #4A86FF;
+    line-height: normal;
+    justify-content: center;
+    align-items: center; 
+}
+.hobbytext{
+    line-height: 80px;
+    text-align: center;
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+}
+.hobbies img{
+    position: relative;
+    bottom: -40px;
+    width: 300px;
+    height: 220px;
+}
+
+main{
+    margin-bottom: 342px;
+}
