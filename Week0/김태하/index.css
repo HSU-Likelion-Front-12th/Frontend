@@ -1,0 +1,348 @@
+body {
+    margin: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+:root {
+    /* Color */
+    --white-color: #fff;
+    --black-color: #140a00;
+    --blue-color: #045fd4;
+    --red-color: #ff0000;
+    --grey-dark-color: #909090;
+    --grey-light-color: #e0e0e0;
+
+    /* Size */
+    --padding: 12px;
+    --avatar-size: 36px;
+
+    /* font Size */
+    --font-large: 18px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-micro: 10px;
+}
+
+/* nav 바 */
+
+.nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 12rem;
+}
+
+#title {
+    color: #4a86ff;
+    font-family: Inter;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.nav_menu {
+    display: flex;
+    padding-left: 0;
+}
+
+.nav_menu li {
+    padding: 1rem 1.2rem;
+}
+
+.nav {
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.nav_toggleBtn {
+    position: absolute;
+    right: 2rem;
+    top: 1.55rem;
+}
+
+.nav_toggleBtn i {
+    display: none;
+
+    font-size: 1.2rem;
+}
+
+/* 소개 */
+
+#introduce {
+    background-color: #4a86ff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 4rem;
+    color: #fff;
+
+    padding: 6.25rem 0;
+}
+
+/* ABOUT */
+
+.section {
+    background-color: #f3f5ff;
+    padding-bottom: 5.6rem;
+}
+
+.subtitle {
+    padding-top: 3.75rem;
+    color: #4a86ff;
+
+    text-align: center;
+    font-family: Inter;
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 800;
+}
+
+#about_content {
+    display: flex;
+    padding: 3rem;
+
+    justify-content: center;
+}
+
+#about_myself {
+    padding-top: 1.875rem;
+    width: 17.5rem;
+    height: 19.25rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    border: 0.0625rem solid #ebedf8;
+}
+
+#about_myself .img_frame {
+    width: 8.125rem;
+    margin: 0 auto;
+}
+
+#about_myself .img {
+    width: 8.125rem;
+    height: 8.125rem;
+    border-radius: 50%;
+}
+
+#about_myself .name {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    color: #4a86ff;
+
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+#about_myself ul {
+    color: #484a64;
+
+    font-family: Inter;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+#about_myself svg {
+    width: 1.625rem;
+    height: 1.625rem;
+    margin-right: 0.625rem;
+}
+
+#about_myself li {
+    display: flex;
+}
+
+#about_abillity {
+    margin-left: 1.875rem;
+    font-family: Inter;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 700;
+
+    display: flex;
+}
+
+.abillity_content {
+    color: #626682;
+
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    padding: 0.3rem 0;
+}
+
+.abillity_title {
+    margin-bottom: 0.625rem;
+}
+
+.abillity_secont {
+    margin-top: auto;
+}
+
+.abillity_1,
+.abillity_2 {
+    display: flex;
+    flex-direction: column;
+    width: 18.125rem;
+}
+
+/* hobby */
+
+#hobby_frames {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 3rem;
+}
+
+.hobby_frame {
+    width: 18.75rem;
+    padding: 0 0.625rem;
+}
+
+.hobby_title {
+    background-color: #4a86ff;
+    height: 3.125rem;
+    color: #fff;
+
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 700;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0.8125rem 0.8125rem 0 0;
+}
+
+.hobby_img {
+    display: flex;
+    height: 15rem;
+    width: 18.75rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.hobby_img img {
+    border-radius: 1rem;
+    height: 13rem;
+    padding: 1rem;
+}
+
+/* 작은 화면에 대한 스타일 */
+@media screen and (max-width: 768px) {
+    .nav_bar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.2rem 3rem;
+    }
+
+    .nav_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav_menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav_toggleBtn i {
+        display: block;
+    }
+
+    .nav_menu.active {
+        display: flex;
+    }
+
+    #introduce {
+        padding: 5rem 2rem;
+    }
+
+    #about_content {
+        flex-direction: column;
+
+        align-items: center;
+        margin: 0 auto;
+        padding: 0;
+        padding-top: 1rem;
+    }
+
+    #about_myself {
+        width: 80%;
+    }
+
+    #myself_list {
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    #myself_list li {
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .abillity_1,
+    .abillity_2 {
+        width: 100%;
+        padding: 2rem;
+    }
+    #hobby_frames {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hobby_frame {
+        margin-bottom: 2rem;
+    }
+
+    .abillity_title {
+        padding-top: 2rem;
+    }
+}
+
+/* 중간 크기 화면에 대한 스타일 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #about_myself {
+        margin-left: 10rem;
+        width: 50%;
+    }
+
+    #myself_list {
+        padding: 0 3rem;
+    }
+
+    #about_abillity {
+        width: 50%;
+    }
+}
