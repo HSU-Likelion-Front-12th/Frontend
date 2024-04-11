@@ -5,6 +5,7 @@ const NavContainer = styled.nav`
   height: 120px;
   display: flex;
   justify-content: center;
+  background: white;
 `;
 
 const NavUl = styled.nav`

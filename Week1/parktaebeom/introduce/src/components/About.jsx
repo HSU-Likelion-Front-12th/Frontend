@@ -4,10 +4,6 @@ import phone from "../images/phone.png";
 import message from "../images/message.png";
 import mappin from "../images/mappin.png";
 
-const background = {
-  background: "#f3f5ff",
-};
-
 const Subtitle = styled.p`
   color: #4a86ff;
   text-align: center;
@@ -132,81 +128,52 @@ const BackgroundWrapper = styled.div`
 function About() {
   return (
     <>
-      <BackgroundWrapper>
-        <Subtitle>ABOUT</Subtitle>
-        <AboutContainer>
-          <Profile>
-            <MyProfile>
-              <MyProfileImg src={profile} />
-              <MyProfileSpan>박태범</MyProfileSpan>
-            </MyProfile>
-            <ProfileContainer>
-              <Icon src={phone} />
-              <P>010-9390-1250</P>
-            </ProfileContainer>
-            <ProfileContainer>
-              <Icon src={message} />
-              <P>region9@naver.com</P>
-            </ProfileContainer>
-            <ProfileContainer>
-              <Icon src={mappin} />
-              <P>서울특별시 성북구 삼선교로 16길</P>
-            </ProfileContainer>
-          </Profile>
-          <InfoContainer>
-            <InfoLeftContainer>
-              <div>
-                <InfoSpan>EDUCATION</InfoSpan>
-                <InfoP>한성대학교 컴퓨터공학부</InfoP>
-                <InfoP>2019.03~2025.02</InfoP>
-              </div>
-              <div>
-                <InfoSpan>WORK</InfoSpan>
-                <InfoP>프론트엔드 개발자</InfoP>
-              </div>
-            </InfoLeftContainer>
-            <InfoRightContainer>
-              <div>
-                <InfoSpan>SKILLS</InfoSpan>
-                <InfoP>Python</InfoP>
-                <InfoP>Java</InfoP>
-                <InfoP>JavaScript</InfoP>
-              </div>
-              <div>
-                <InfoSpan>ACTIVITIES</InfoSpan>
-                <InfoP>멋쟁이사자처럼 12기</InfoP>
-              </div>
-            </InfoRightContainer>
-          </InfoContainer>
-        </AboutContainer>
-        <Subtitle>HOBBY</Subtitle>
-        <Hobbys>
-          <HobbyContainer>
-            <HobbyBox>
-              <p>사진 찍기</p>
-            </HobbyBox>
-            <ImgBox>
-              <StyleImg src={img1} />
-            </ImgBox>
-          </HobbyContainer>
-          <HobbyContainer>
-            <HobbyBox>
-              <p>볼링 치기</p>
-            </HobbyBox>
-            <ImgBox>
-              <StyleImg src={img2} />
-            </ImgBox>
-          </HobbyContainer>
-          <HobbyContainer>
-            <HobbyBox>
-              <p>보드 타기</p>
-            </HobbyBox>
-            <ImgBox>
-              <StyleImg src={img3} />
-            </ImgBox>
-          </HobbyContainer>
-        </Hobbys>
-      </BackgroundWrapper>
+      <Subtitle>ABOUT</Subtitle>
+      <AboutContainer>
+        <Profile>
+          <MyProfile>
+            <MyProfileImg src={profile} />
+            <MyProfileSpan>박태범</MyProfileSpan>
+          </MyProfile>
+          <ProfileContainer>
+            <Icon src={phone} />
+            <P>010-9390-1250</P>
+          </ProfileContainer>
+          <ProfileContainer>
+            <Icon src={message} />
+            <P>region9@naver.com</P>
+          </ProfileContainer>
+          <ProfileContainer>
+            <Icon src={mappin} />
+            <P>서울특별시 성북구 삼선교로 16길</P>
+          </ProfileContainer>
+        </Profile>
+        <InfoContainer>
+          <InfoLeftContainer>
+            <div>
+              <InfoSpan>EDUCATION</InfoSpan>
+              <InfoP>한성대학교 컴퓨터공학부</InfoP>
+              <InfoP>2019.03~2025.02</InfoP>
+            </div>
+            <div>
+              <InfoSpan>WORK</InfoSpan>
+              <InfoP>프론트엔드 개발자</InfoP>
+            </div>
+          </InfoLeftContainer>
+          <InfoRightContainer>
+            <div>
+              <InfoSpan>SKILLS</InfoSpan>
+              <InfoP>Python</InfoP>
+              <InfoP>Java</InfoP>
+              <InfoP>JavaScript</InfoP>
+            </div>
+            <div>
+              <InfoSpan>ACTIVITIES</InfoSpan>
+              <InfoP>멋쟁이사자처럼 12기</InfoP>
+            </div>
+          </InfoRightContainer>
+        </InfoContainer>
+      </AboutContainer>
     </>
   );
 }
