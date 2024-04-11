@@ -1,0 +1,17 @@
+.menu-explain {
+    display: inline-block;
+    text-align: cetner;
+    width: 14rem;
+    height: 14rem;
+    margin-right: 0.6rem;
+  }
+  
+  .menu-explain img {
+    width: 10rem;
+    height: 6rem;
+  }
+  
+  .menu-explain span {
+    font-size: 0.8rem;
+    color: grey;
+  }
