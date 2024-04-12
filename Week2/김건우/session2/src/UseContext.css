@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .header {
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+  }
+  
+  .body {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer {
+    border-top: 1px solid gray;
+    height: 25vh;
+  }
+  .displayBtn {
+    margin-left: 80vw;
+    margin-top: 15vh;
+    background-color: aqua;
+  }
