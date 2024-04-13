@@ -61,6 +61,7 @@ function App() {
         setLikes = {setLikes}>
       </CmtInput>
       <Modal show={showModal} onClose={closeModal} />
+      currently building page...
     </div>
   );
 }
