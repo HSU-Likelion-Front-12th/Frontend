@@ -8,7 +8,7 @@ function Modal (props){
       return (
         <div className="modal-background">
           <div className="modal" style={{ bottom: '0px', position: 'fixed' }}>
-            <button onClick={()=>{props.onClose()}}>닫기</button>
+            <button onClick={()=>{props.openModal()}}>닫기</button>
             <div>
               <input type = 'text' value = 'id'></input>
               <input type = 'text' value = 'edit text'></input>

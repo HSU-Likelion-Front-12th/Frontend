@@ -9,8 +9,7 @@ function Comment(props){
             <div className='cmt-box' key={idx}>
               <div className = 'cmt' >
                 <p></p>
-                <b>title</b>: {cmt.id}<p></p>
-                <b>content:</b>{cmt.title}<p></p>
+                <b>{cmt.id} </b><p></p>
                 {cmt.body}<p></p>
               </div>
               <div>

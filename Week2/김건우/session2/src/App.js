@@ -5,6 +5,7 @@ import Comment from './Cmpnts/Comment.jsx';
 import CmtInput from './Cmpnts/CmtInput.jsx';
 import Modal from './Cmpnts/Modal.jsx';
 
+
 function App() {
   const [newCmt, setNewCmt] = React.useState('');
   const [cmt, setCmt] = React.useState([]);
@@ -13,37 +14,31 @@ function App() {
     fetch('https://jsonplaceholder.typicode.com/posts')
     .then((response) => response.json())
     .then((json) => {
-      let data = json.map((elem) => {
+      let data = json.map((elem, idx) => {
         return { body: elem.body, title: elem.title, id: elem.id };
-      });
+      }).reverse();
       setCmt(data);
       setLikes(new Array(data.length).fill(0));
     });
   }, []);
 
   //modal
-  const [showModal, setShowModal] = React.useState(false);
-  const openModal = () => {
-    setShowModal(true);
-  };
-  const closeModal = () => {
-    setShowModal(false);
-  };
+  const [showModal, setShowModal] = React.useState(false);  
+  const openModal = () => {setShowModal(true)};
+  const closeModal = () => {setShowModal(false)};
+  
+  
+
   function pushLike(i){
     let copy = [...likes];
     copy[i] = copy[i]+1;
     setLikes(copy);
   }
   
-  return (
+  
+  return(
     <div className="App">
       <Header></Header>
-      <Comment
-      cmt = {cmt}
-      likes = {likes}
-      pushLike = {pushLike}
-      openModal = {openModal}
-      ></Comment>
       <CmtInput
         cmt = {cmt}
         newCmt = {newCmt}
@@ -52,7 +47,16 @@ function App() {
         setNewCmt = {setNewCmt}
         setLikes = {setLikes}>
       </CmtInput>
-      <Modal show={showModal} onClose={closeModal} />
+      <Comment
+        cmt = {cmt}
+        likes = {likes}
+        pushLike = {pushLike}
+        openModal = {openModal}
+      ></Comment>
+      <Modal
+      show={showModal}
+      onClose={closeModal}
+      openModal = {openModal} />
     </div>
   );
 }

@@ -15,7 +15,11 @@ function CmtInput(props){
             }
             else{
               setErr(false);
-              props.setCmt([...props.cmt, props.newCmt]);
+              const newObj = {
+                id: props.likes.length + 1,
+                body: props.newCmt
+              }
+              props.setCmt([newObj, ...props.cmt]);
               props.setLikes([...props.likes, 0]);
               props.setNewCmt('');
             }
