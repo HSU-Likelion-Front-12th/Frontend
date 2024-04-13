@@ -8,25 +8,24 @@ import EditModal from './Cmpnts/EditModal.jsx';
 
 function App() {
   const [newCmt, setNewCmt] = React.useState('');
-  const [cmt, setCmt] = React.useState([]);
+  const [objCmt, setObjCmt] = React.useState([{title: '', body: '', id: null}]);
   const [likes, setLikes] = React.useState([]);
+  const [showModal, setShowModal] = React.useState(false);
+  const [objEdit, setObjEdit] = React.useState([{title: '', body: '', id: null}]);
+  
+
+  //fetch dummy data
   React.useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/posts')
     .then((response) => response.json())
     .then((json) => {
       let data = json.map((elem, idx) => {
         return { body: elem.body, title: elem.title, id: elem.id };
-      }).reverse();
-      setCmt(data);
+      });
+      setObjCmt(data);
       setLikes(new Array(data.length).fill(0));
     });
   }, []);
-
-  //modal
-  const [showModal, setShowModal] = React.useState(false);  
-  const openModal = () => {setShowModal(true)};
-  const closeModal = () => {setShowModal(false)};
-  
   
   function pushLike(i){
     let copy = [...likes];
@@ -34,28 +33,35 @@ function App() {
     setLikes(copy);
   }
   
-  
+  console.log(showModal);
   return(
     <div className="App">
       <Header></Header>
       <CmtInput
-        cmt = {cmt}
+        cmt = {objCmt}
         newCmt = {newCmt}
         likes = {likes}
-        setCmt = {setCmt}
+        setObjCmt = {setObjCmt}
         setNewCmt = {setNewCmt}
         setLikes = {setLikes}>
       </CmtInput>
       <Comment
-        cmt = {cmt}
+        objCmt = {objCmt}
+        setObjCmt = {setObjCmt}
+        objEdit = {objEdit}
+        setObjEdit = {setObjEdit}
         likes = {likes}
         pushLike = {pushLike}
-        openModal = {openModal}
+        setShowModal = {setShowModal}
       ></Comment>
       <EditModal
-      show={showModal}
-      closeModal={closeModal}
-      openModal = {openModal} />
+      objCmt = {objCmt}
+      setObjCmt = {setObjCmt}r
+      showModal={showModal}
+      setShowModal = {setShowModal}
+      objEdit = {objEdit}
+      setObjEdit = {setObjEdit}
+      />
     </div>
   );
 }
