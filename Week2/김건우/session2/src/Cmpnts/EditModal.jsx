@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Modal (props){
+function EditModal (props){
     if (!props.show) {
       console.log(props.show);
       return null;
@@ -8,7 +8,7 @@ function Modal (props){
       return (
         <div className="modal-background">
           <div className="modal" style={{ bottom: '0px', position: 'fixed' }}>
-            <button onClick={()=>{props.openModal()}}>닫기</button>
+            <button onClick={()=>{props.closeModal()}}>닫기</button>
             <div>
               <input type = 'text' value = 'id'></input>
               <input type = 'text' value = 'edit text'></input>
@@ -18,4 +18,4 @@ function Modal (props){
       );
     }
   };
-export default Modal;
+export default EditModal;

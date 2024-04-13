@@ -3,7 +3,7 @@ import './App.css';
 import Header from './Cmpnts/Header.jsx';
 import Comment from './Cmpnts/Comment.jsx';
 import CmtInput from './Cmpnts/CmtInput.jsx';
-import Modal from './Cmpnts/Modal.jsx';
+import EditModal from './Cmpnts/EditModal.jsx';
 
 
 function App() {
@@ -28,7 +28,6 @@ function App() {
   const closeModal = () => {setShowModal(false)};
   
   
-
   function pushLike(i){
     let copy = [...likes];
     copy[i] = copy[i]+1;
@@ -53,9 +52,9 @@ function App() {
         pushLike = {pushLike}
         openModal = {openModal}
       ></Comment>
-      <Modal
+      <EditModal
       show={showModal}
-      onClose={closeModal}
+      closeModal={closeModal}
       openModal = {openModal} />
     </div>
   );

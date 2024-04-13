@@ -9,7 +9,7 @@ function CmtInput(props){
             props.setNewCmt(e.target.value);
           }}></input>
           <button onClick = {()=>{
-            if(props.newCmt == ''){
+            if(props.newCmt === ''){
               setErr(true);
               console.log(err);
             }
