@@ -2,7 +2,7 @@ import React from 'react';
 import '../Styles/EditModal.css'
 function EditModal (props){
 
-  function bodyChange(e){
+  function saveBody(e){
     props.setObjEdit(prevObj => ({
       ...prevObj,
       body: e.target.value
@@ -26,13 +26,16 @@ function EditModal (props){
     props.setShowModal(false);
     }
 
-    function titleChange(e){
+    function saveTitle(e){
       props.setObjEdit(prevObj => ({
         ...prevObj,
-        title: e.target.value
+        title: e.target.value,
+        body: e.target.value
       }));
     }
 
+
+    //ui
     if (props.showModal === false) {
       return null;
     }
@@ -40,11 +43,11 @@ function EditModal (props){
       return (
         <div className="modal-background">
           <div className="modal">
-            <button onClick={()=>{props.setShowModal(false);}}>닫기</button>
+            <button onClick={()=>{props.setShowModal(false)}}>닫기</button>
             <button onClick={pressComplete}>완료</button>
             <div className='edit-input-container'>
-              <input type='text' placeholder= {props.objCmt[props.objEdit.id].title} onChange={titleChange}/>
-              <input type = 'text' placeholder= {props.objCmt[props.objEdit.id].body} onChange={bodyChange}></input>
+              <input type='text' placeholder= {props.objEdit.title} onChange={saveTitle}/>
+              <input type = 'text' placeholder= {props.objEdit.body} onChange={saveBody}></input>
             </div>
           </div>
         </div>

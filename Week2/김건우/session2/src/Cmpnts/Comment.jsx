@@ -25,10 +25,11 @@ function Comment(props){
                     </button>
                   <button onClick={(e)=>{
                     props.setShowModal(true);
-                    props.setObjEdit((prevObj) => ({
-                      ...prevObj,
-                      id: idx,
-                    }));
+                    props.setObjEdit({
+                      title: cmt.title,
+                      body: cmt.body,
+                      id: cmt.id
+                    })
                   }}>edit</button>
                   <button onClick={(e)=>{
                     props.setObjCmt(prevObj => prevObj.filter((_, index) => index !== idx));

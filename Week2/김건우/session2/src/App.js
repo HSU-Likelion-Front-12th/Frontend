@@ -7,13 +7,13 @@ import EditModal from './Cmpnts/EditModal.jsx';
 
 
 function App() {
-  const [newCmt, setNewCmt] = React.useState('');
-  const [objCmt, setObjCmt] = React.useState([]);
+  const [objCmt, setObjCmt] = React.useState([{title: '', body: '', id: null}]);
+  const [objNewCmt, setObjNewCmt] = React.useState({title: '', body: ''});
+  const [objEdit, setObjEdit] = React.useState({title: '', body: '', id: null});
   const [likes, setLikes] = React.useState([]);
   const [showModal, setShowModal] = React.useState(false);
-  const [objEdit, setObjEdit] = React.useState([{title: '', body: '', id: null}]);
   
-
+  
   //fetch dummy data
   React.useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/posts')
@@ -26,19 +26,16 @@ function App() {
       setLikes(new Array(data.length).fill(0));
     });
   }, []);
-  
-  
-  
-  console.log(showModal);
+
   return(
     <div className="App">
       <Header></Header>
       <CmtInput
-        cmt = {objCmt}
-        newCmt = {newCmt}
+        objCmt = {objCmt}
+        objNewCmt = {objNewCmt}
         likes = {likes}
         setObjCmt = {setObjCmt}
-        setNewCmt = {setNewCmt}
+        setObjNewCmt = {setObjNewCmt}
         setLikes = {setLikes}>
       </CmtInput>
       <Comment
@@ -52,7 +49,7 @@ function App() {
       ></Comment>
       <EditModal
       objCmt = {objCmt}
-      setObjCmt = {setObjCmt}r
+      setObjCmt = {setObjCmt}
       showModal={showModal}
       setShowModal = {setShowModal}
       objEdit = {objEdit}
