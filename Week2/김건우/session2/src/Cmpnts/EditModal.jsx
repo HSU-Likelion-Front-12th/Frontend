@@ -20,8 +20,8 @@ function EditModal (props){
 
   function pressComplete(){
     props.setObjCmt(prevCmts => {
-      return prevCmts.map(cmt => {
-        if (cmt.id === (props.objEdit.id + 1)) {
+      return prevCmts.map((cmt, idx) => {
+        if (idx === (props.objEdit.id)) {
           return {
             ...cmt,
             body: props.objEdit.body,

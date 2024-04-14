@@ -7,7 +7,7 @@ import EditModal from './Cmpnts/EditModal.jsx';
 
 
 function App() {
-  const [objCmt, setObjCmt] = React.useState([{title: '', body: '', id: null}]);
+  const [objCmt, setObjCmt] = React.useState([{title: '', body: ''}]);
   const [objNewCmt, setObjNewCmt] = React.useState({title: '', body: ''});
   const [objEdit, setObjEdit] = React.useState({title: '', body: '', id: null});
   const [likes, setLikes] = React.useState([]);

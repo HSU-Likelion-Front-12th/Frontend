@@ -7,12 +7,10 @@ function CmtInput(props){
 
     function inputTitle(e){
       props.setObjNewCmt((prevObj)=>({...prevObj, title: e.target.value}));
-      console.log(props.objNewCmt);
     }
 
     function inputBody(e){
       props.setObjNewCmt((prevObj)=>({...prevObj, body: e.target.value}));
-      console.log(props.objNewCmt);
     }
 
     function clickSubmit(){
@@ -23,7 +21,10 @@ function CmtInput(props){
       else{
         setErr(false);
         props.setObjCmt([
-          {title: props.objNewCmt.title, body: props.objNewCmt.body},
+          {
+            title: props.objNewCmt.title,
+            body: props.objNewCmt.body
+          },
           ...props.objCmt
           
         ])

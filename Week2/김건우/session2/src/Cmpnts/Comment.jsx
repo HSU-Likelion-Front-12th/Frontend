@@ -16,7 +16,7 @@ function Comment(props){
           return (
             <div className='cmt-container' key={idx}>
               <div className = 'cmt'>
-                <b>{cmt.id}.{cmt.title}</b>
+                <b>{idx+1}.{cmt.title}</b>
                 <p>{cmt.body}</p>
               </div>
               <div className='btn'>
@@ -28,7 +28,7 @@ function Comment(props){
                     props.setObjEdit({
                       title: cmt.title,
                       body: cmt.body,
-                      id: cmt.id
+                      id:idx
                     })
                   }}>edit</button>
                   <button onClick={(e)=>{
