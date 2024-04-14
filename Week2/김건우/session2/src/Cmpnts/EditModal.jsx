@@ -2,12 +2,21 @@ import React from 'react';
 import '../Styles/EditModal.css'
 function EditModal (props){
 
+  function saveTitle(e){
+    props.setObjEdit(prevObj => ({
+      ...prevObj,
+      title: e.target.value,
+      body: e.target.value
+    }));
+  }
+  
   function saveBody(e){
     props.setObjEdit(prevObj => ({
       ...prevObj,
       body: e.target.value
     }));
   }
+  
 
   function pressComplete(){
     props.setObjCmt(prevCmts => {
@@ -26,15 +35,6 @@ function EditModal (props){
     props.setShowModal(false);
     }
 
-    function saveTitle(e){
-      props.setObjEdit(prevObj => ({
-        ...prevObj,
-        title: e.target.value,
-        body: e.target.value
-      }));
-    }
-
-
     //ui
     if (props.showModal === false) {
       return null;
@@ -46,8 +46,8 @@ function EditModal (props){
             <button onClick={()=>{props.setShowModal(false)}}>닫기</button>
             <button onClick={pressComplete}>완료</button>
             <div className='edit-input-container'>
-              <input type='text' placeholder= {props.objEdit.title} onChange={saveTitle}/>
-              <input type = 'text' placeholder= {props.objEdit.body} onChange={saveBody}></input>
+              <input type='text' placeholder= {props.objCmt[props.objEdit.id].title} onChange={(e)=>{saveTitle(e)}}/>
+              <input type = 'text' placeholder= {props.objCmt[props.objEdit.id].body} onChange={(e)=>{saveBody(e)}}></input>
             </div>
           </div>
         </div>
