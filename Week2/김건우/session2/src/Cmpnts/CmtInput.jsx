@@ -8,18 +8,18 @@ function CmtInput(props){
           <input onChange = {(e)=>{
             props.setNewCmt(e.target.value);
           }}></input>
-          <button onClick = {(e, i)=>{
+          <button onClick = {()=>{
             if(props.newCmt === ''){
               setErr(true);
               console.log(err);
             }
             else{
               setErr(false);
-              props.setObjCmt(prevCmts => ({
-                ...prevCmts,
-                id: Math.random().toString(),
-                title: "New Comment",
-                body: props.newCmt,
+              props.setObjCmt(props.objCmt.map((prevObj) => {
+                return {
+                  ...prevObj,
+                  title: props.newCmt
+                };
               }));
               props.setLikes([...props.likes, 0]);
               props.setNewCmt('');

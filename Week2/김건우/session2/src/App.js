@@ -8,7 +8,7 @@ import EditModal from './Cmpnts/EditModal.jsx';
 
 function App() {
   const [newCmt, setNewCmt] = React.useState('');
-  const [objCmt, setObjCmt] = React.useState([{title: '', body: '', id: null}]);
+  const [objCmt, setObjCmt] = React.useState([]);
   const [likes, setLikes] = React.useState([]);
   const [showModal, setShowModal] = React.useState(false);
   const [objEdit, setObjEdit] = React.useState([{title: '', body: '', id: null}]);
@@ -27,11 +27,7 @@ function App() {
     });
   }, []);
   
-  function pushLike(i){
-    let copy = [...likes];
-    copy[i] = copy[i]+1;
-    setLikes(copy);
-  }
+  
   
   console.log(showModal);
   return(
@@ -51,7 +47,7 @@ function App() {
         objEdit = {objEdit}
         setObjEdit = {setObjEdit}
         likes = {likes}
-        pushLike = {pushLike}
+        setLikes = {setLikes}
         setShowModal = {setShowModal}
       ></Comment>
       <EditModal

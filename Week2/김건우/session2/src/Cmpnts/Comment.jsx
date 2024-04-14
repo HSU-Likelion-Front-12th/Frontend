@@ -2,18 +2,25 @@ import React from 'react';
 import '../Styles/Comment.css';
 
 function Comment(props){
+
+  function pushLike(i){
+    let copy = [...props.likes];
+    copy[i] = copy[i]+1;
+    props.setLikes(copy);
+  }
+
     return(
       <div>
       {
         props.objCmt.map((cmt, idx)=>{
           return (
             <div className='cmt-container' key={idx}>
-              <div className = 'cmts'>
+              <div className = 'cmt'>
                 <b>{cmt.id}.{cmt.title}</b>
                 <p>{cmt.body}</p>
               </div>
-              <div className='btns'>
-                  <button onClick={()=>{props.pushLike(idx)}}>
+              <div className='btn'>
+                  <button onClick={()=>{pushLike(idx)}}>
                     👍<b>{props.likes[idx]}</b>
                     </button>
                   <button onClick={(e)=>{

@@ -1,16 +1,16 @@
-.cmt-container {
+  .cmt-container {
     display: flex;
     justify-content: space-between;
     margin-top: 3vh
   }
   
-  .cmts {
+  .cmt {
       max-width: 80vw;
       white-space: pre-wrap;
       word-wrap: break-word;
   }
 
-  .btns {
+  .btn {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
