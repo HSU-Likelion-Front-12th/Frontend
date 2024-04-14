@@ -34,12 +34,11 @@ function CmtInput(props){
     
     return (
       <div className="publish">
-          <input id='szTitleInput' value={props.objNewCmt.title} onChange={inputTitle}></input>
-          <input id='szBodyInput' value={props.objNewCmt.body} onChange={inputBody}></input>
-
+          <input id='szTitleInput' placeholder='title' value={props.objNewCmt.title} onChange={inputTitle}></input>
+          <input id='szBodyInput' placeholder='content' value={props.objNewCmt.body} onChange={inputBody}></input>
           <button onClick = {clickSubmit}>등록</button>
           {errMsg}
-        </div>
+      </div>
     )
 }
 export default CmtInput;
