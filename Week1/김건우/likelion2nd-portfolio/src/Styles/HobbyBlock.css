@@ -1,0 +1,29 @@
+.hobby-blocks{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hobby-blocks > *{
+    aspect-ratio: 1/1;
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid #EBEDF8;
+    background: #FFF;
+}
+
+@media (max-width: 1000px){
+
+    .hobby-blocks{
+        gap: 2rem;
+    }
+
+    .hobby-blocks > *{
+
+        aspect-ratio: 1/1;
+        width: 100%;
+        border-radius: 16px;
+        border: 1px solid #EBEDF8;
+        background: #FFF;
+    }
+}

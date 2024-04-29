@@ -1,0 +1,29 @@
+.info-title{
+    margin-top: 23px;
+    margin-bottom: 23px;
+    color: #000;
+    text-align: start;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.info-content{
+    color: #626682;
+    font-family: Inter;
+    text-align: start;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 170%;
+}
+
+@media (max-width: 1000px){
+    .info-title{
+        font-size: 1.5rem;
+    }
+    .info-content{
+        font-size: 1rem;
+    }
+}

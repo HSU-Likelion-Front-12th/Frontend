@@ -1,0 +1,30 @@
+.block-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    border-radius: 16px 16px 0px 0px;
+    background: #4A86FF;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.block-content{
+    padding: 2.5rem;
+    box-sizing: border-box;
+}
+.block-content > img {
+    aspect-ratio: 9 / 7;
+    width: 100%;
+    border-radius: 8px;
+    background: #EBEDF8;
+}
+@media (max-width: 1000px){
+    .block-title{
+        font-size: 1.7rem;
+    }
+}
