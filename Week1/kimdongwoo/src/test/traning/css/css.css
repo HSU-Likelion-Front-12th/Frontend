@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  /* flex-direction: row; */
+  flex-direction: column;
+  height: 100vh;
+  border: 1px solid red;
+  /* justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: center; */
+  /* align-items: ; */
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.content {
+  border: 1px solid black;
+  width: fit-content;
+}
