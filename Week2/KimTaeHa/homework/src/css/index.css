@@ -1,0 +1,57 @@
+.list {
+    margin-left: 0.2vw;
+}
+.publish {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vw;
+    max-width: 500px;
+    margin-left: 1vw;
+}
+
+.publish input {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px; /* 버튼과의 간격 */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.publish button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap; /* 버튼의 텍스트를 한 줄로 유지 */
+}
+
+.publish button:hover {
+    background-color: #595959;
+}
+
+@media (max-width: 600px) {
+    /* 화면이 좁아지면 스타일 조정 */
+    .publish {
+        flex-direction: column; /* 세로 방향 배치 */
+        max-width: none;
+    }
+
+    .publish input,
+    .publish button {
+        width: 100%; /* 전체 너비 사용 */
+        margin-right: 0; /* 오른쪽 마진 제거 */
+    }
+
+    .publish button {
+        margin-top: 10px; /* 버튼과 입력 필드 사이의 간격 */
+    }
+}
+
+.black-nav {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    text-align: left;
+}
