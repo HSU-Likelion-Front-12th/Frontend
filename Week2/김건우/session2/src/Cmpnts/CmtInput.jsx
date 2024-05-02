@@ -20,16 +20,20 @@ function CmtInput(props){
       }
       else{
         setErr(false);
+        const currentDate = new Date();
+        const dateString = currentDate.toLocaleString();
+        console.log(dateString);
         props.setObjCmt([
           {
             title: props.objNewCmt.title,
-            body: props.objNewCmt.body
+            body: props.objNewCmt.body,
+            uploadTime: dateString
           },
           ...props.objCmt
-          
         ])
         props.setLikes([...props.likes, 0]);
         props.setObjNewCmt({title:'', body: ''});
+        console.log('uploadTime is ' + props.objCmt[0].uploadTime);
       }
     }
     

@@ -16,8 +16,10 @@ function Comment(props){
           return (
             <div className='cmt-container' key={idx}>
               <div className = 'cmt'>
-                <b>{idx+1}.{cmt.title}</b>
-                <p>{cmt.body}</p>
+                <b id='cmt-title'>{idx+1}. {cmt.title}</b>
+                <p id='cmt-body'>{cmt.body}</p>
+                <p id='cmt-uploadTime'>{cmt.uploadTime}</p>
+                <p id='cmt-isEdited' style={{color: cmt.isEdited ? 'red' : 'white'}}>edited</p> 
               </div>
               <div className='btn'>
                   <button onClick={()=>{pushLike(idx)}}>

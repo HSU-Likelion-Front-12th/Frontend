@@ -7,20 +7,26 @@ import EditModal from './Cmpnts/EditModal.jsx';
 
 
 function App() {
-  const [objCmt, setObjCmt] = React.useState([{title: '', body: ''}]);
+  const [objCmt, setObjCmt] = React.useState([{title: '', body: '', uploadTime: '', isEdited: false}]);
   const [objNewCmt, setObjNewCmt] = React.useState({title: '', body: ''});
   const [objEdit, setObjEdit] = React.useState({title: '', body: '', id: null});
   const [likes, setLikes] = React.useState([]);
   const [showModal, setShowModal] = React.useState(false);
-  
   
   //fetch dummy data
   React.useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/posts')
     .then((response) => response.json())
     .then((json) => {
+      const currentDate = new Date();
+      const dateString = currentDate.toLocaleString();
       let data = json.map((elem, idx) => {
-        return { body: elem.body, title: elem.title, id: elem.id };
+        return {
+          body: elem.body,
+          title: elem.title,
+          id: elem.id,
+          uploadTime: dateString,
+        };
       });
       setObjCmt(data);
       setLikes(new Array(data.length).fill(0));
