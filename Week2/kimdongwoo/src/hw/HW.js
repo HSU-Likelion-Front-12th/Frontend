@@ -43,7 +43,6 @@ export default function HW() {
         onClick={() => {
           handleIssueList(isIssue);
           handleIssue('');
-          console.log(Time());
         }} />
       <h1>{isIssueList}</h1>
     </>
