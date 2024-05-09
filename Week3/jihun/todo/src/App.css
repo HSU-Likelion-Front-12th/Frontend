@@ -1,0 +1,136 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonBox {
+  margin-top: 2rem;
+  ;
+  display: flex;
+  gap: 2rem;
+}
+
+.buttonBox>p {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.buttonBox>p:hover {
+  text-decoration: underline;
+}
+
+.toDoList {
+  width: 30rem;
+  height: 3.625rem;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #F1F1F1;
+  margin-top: 1.06rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.toDoList .select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 2.625rem;
+  height: 2.625rem;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--5, #CECECE);
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.15) inset;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.toDoList .select:checked {
+  border-radius: 10px;
+  /* background: var(--1, linear-gradient(180deg, #FF9F9F 0%, #FFBFBF 100%)); */
+  background: skyblue;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.15) inset;
+}
+
+.toDoList .field {
+  color: #434343;
+  font-size: 1.875rem;
+  font-family: Pretendard;
+  font-weight: 200;
+  background-color: transparent;
+  border: none;
+}
+
+.toDoList .field {
+  color: #434343;
+  font-size: 1.875rem;
+  font-family: Pretendard;
+  font-weight: 200;
+  background-color: transparent;
+  border: none;
+}
+
+.toDoList .field:focus {
+  outline: none;
+}
+
+.toDoList .minusButton {
+  position: absolute;
+  right: 0.44rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
