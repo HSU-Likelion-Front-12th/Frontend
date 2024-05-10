@@ -1,0 +1,92 @@
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header>img {
+  width: 250px;
+  height: fit-content;
+}
+
+nav {
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+}
+
+.navContainer {
+  max-width: 80rem;
+  height: 100%;
+  display: flex;
+  color: black;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.navContainer>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  height: 100%;
+  min-width: 6rem;
+}
+
+.navContainer strong {
+  font-size: 1rem;
+}
+
+.navContainer strong:hover {
+  color: rgb(31, 158, 31);
+  border-bottom: 3px solid rgb(31, 158, 31);
+  cursor: pointer;
+}
+
+.sec1 {
+  width: 100vw;
+  height: 45vh;
+  position: relative;
+  background: url(../../../img/main.png) no-repeat 50% 50% / cover;
+}
+
+.sec2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+/* 
+.sec2 article {
+  display: flex;
+} */
+
+.menu-explain {
+  display: inline-block;
+  text-align: center;
+  width: 14rem;
+  height: 14rem;
+  margin-right: 0.6rem;
+}
+
+.menu-explain img {
+  width: 10rem;
+  height: 6rem;
+}
+
+.menu-explain span {
+  font-size: 0.8rem;
+  color: gray;
+}

@@ -1,0 +1,196 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+}
+
+#logo {
+  width: 340px;
+  height: 62px;
+  margin-left: 300px;
+}
+
+.nav {
+  color: #000;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-right: 339px;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+.nav span {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#section1 {
+  width: 100%;
+  height: 800px;
+  background: #4a86ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.introduction {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+#section2 {
+  width: 100%;
+  height: 2000px;
+  background: #f3f5ff;
+}
+.Font {
+  color: #4a86ff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.aboutFrame {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 200px;
+  gap: 80px;
+}
+
+.aboutProfile {
+  width: 380px;
+  height: 500px;
+  border-radius: 16px;
+  border: 1px solid #ebedf8;
+  background: #fff;
+  flex-shrink: 0;
+}
+.profileImage {
+  width: 196.078px;
+  height: 200px;
+  flex-shrink: 0;
+  margin-left: 92px;
+  margin-top: 30px;
+  margin-right: 91.92px;
+}
+.profileName {
+  color: #4a86ff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.profileText {
+  color: #484a64;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.textFrame {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  align-items: space-between;
+  flex-direction: column;
+}
+
+.detailsColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-right: 150px;
+}
+
+.aboutDetail {
+  color: #000;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.aboutDetail span {
+  color: #626682;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 170%;
+}
+.hobbyFrame {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hobbyProfile {
+  width: 380px;
+  height: 377px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 1px solid #ebedf8;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.hobbyType {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px 16px 0px 0px;
+  background: #4a86ff;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.imageFrame {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.hobbyImage {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+}
