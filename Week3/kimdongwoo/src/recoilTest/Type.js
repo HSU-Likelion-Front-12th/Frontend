@@ -11,5 +11,13 @@ export default function Type({ handleSetCount, isCount, element }) {
           }
         }>Count</button>
     </div>
+
+    // <button
+    // onClick={
+    //   () => {
+    //     console.log("check");
+    //     handleSetCount(element); //1씩증가하는 구조
+    //   }
+    // }>Count</button>
   )
 }

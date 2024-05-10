@@ -1,4 +1,5 @@
 import Main from "./hw/Main";
+import Storage from "./hw/Storage";
 // Recoil 연습
 import Recoil from "./recoil/Recoil";
 import RecoilTest from "./recoilTest/Recoil";
@@ -8,6 +9,11 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   const [list, setList] = useState([]); //목록배열
+  const [storageList, setStorageList] = useState([]);
+
+  function addStorage(element) {
+    setStorageList((prevList) => [...prevList, element])
+  }
 
   //목록 추가 함수
   function addList() {
@@ -42,7 +48,9 @@ function App() {
     <>
       <h1>App</h1>
       <Routes>
-        <Route path="/" element={<Main list={list} addList={addList} updateList={updateList} deleteList={deleteList} />}></Route>
+        <Route path="/" element={<Main list={list} addList={addList} updateList={updateList} deleteList={deleteList} addStorage={addStorage} storageList={storageList} />}></Route>
+        <Route path="/storage" element={<Storage storageList={storageList} />}></Route>
+
         <Route path="/recoil" element={<Recoil></Recoil>}></Route>
         <Route path="/recoilTest" element={<RecoilTest></RecoilTest>}></Route>
       </Routes>
