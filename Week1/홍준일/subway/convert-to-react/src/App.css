@@ -1,0 +1,93 @@
+:root{
+  --nav-hover: rgb(31, 158, 31);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img{
+  width: 100% !important;
+  height: 100%;
+  object-fit: cover;
+}
+
+header{
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo{
+  width: 250px;
+  height: fit-content;
+}
+
+nav{
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+}
+
+.navContainer{
+  max-width: 80rem;
+  height: 100%;
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+.navContainer > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  height: 100%;
+  min-width: 6rem;
+}
+
+.navContainer strong{
+  font-size: 1rem;
+}
+
+.navContainer strong:hover{
+  color: var(--nav-hover);
+  border-bottom: 3px solid var(--nav-hover);
+  cursor: pointer;
+}
+
+.sec1{
+  width: 100vw;
+  height: 45vh;
+  position: relative;
+  background: url(./components/assets/main.png) no-repeat 50% 50% / cover;
+
+}
+
+.sec2{
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.menu-explain{
+  display: inline-block;
+  text-align: center;
+  width: 14rem;
+  height: 14rem;
+  margin-right: .6rem;
+}
+
+.menu-explain img{
+  width: 10rem;
+  height: 6rem;
+}
+
+.menu-explain span{
+  font-size: .8rem;
+  color: gray;
+}

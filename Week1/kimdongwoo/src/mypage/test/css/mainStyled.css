@@ -1,0 +1,78 @@
+body {
+  background-color: #F3F5FF;
+}
+
+/* main {
+  background-color: aquamarine;
+  background-color: #F3F5FF;
+} */
+
+main .about-contents p {
+  /* background-color: whitesmoke; */
+  padding: 20px 30px 20px 30px;
+  margin-right: 35px;
+}
+
+main .hobby-contents p {
+  /* background-color: whitesmoke; */
+  padding: 20px 30px 20px 30px;
+}
+
+/* main .main-contents .title {
+   background-color: red; 
+} */
+
+main .about-contents {
+  /* background-color: blueviolet; */
+  width: 1500px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  /* 요소를 수평으로 가운데 정렬합니다. */
+  margin: 0 auto;
+}
+
+main .hobby-contents {
+  /* background-color: blueviolet; */
+  width: 1500px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  /* 요소를 수평으로 가운데 정렬합니다. */
+  margin: 0 auto;
+}
+
+
+main .about-contents figure {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+main .hobby-contents figure {
+  margin-right: 30px;
+  margin-bottom: 100px;
+}
+
+main .about-contents figcaption {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: whitesmoke;
+  height: 50px;
+  background-color: #4A86FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .hobby-contents figcaption {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: whitesmoke;
+  height: 50px;
+  background-color: #4A86FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

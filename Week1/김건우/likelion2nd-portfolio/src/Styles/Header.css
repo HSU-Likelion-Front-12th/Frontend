@@ -1,0 +1,56 @@
+.header{
+    /* padding-left: 20vw;
+    padding-right: 20vw; */
+
+    height: 7.5rem;
+    display: flex;
+    gap: 20vw;
+    justify-content:center;
+    align-items: center;
+}
+
+#logo{
+    width: 17rem;
+    cursor: pointer;
+} 
+
+.nav{
+    display: flex;
+    gap: 5vw;
+
+}
+
+.nav > * {
+    color: #000;
+    font-family: Inter;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    flex: 1;
+    cursor: pointer;
+    
+}
+
+@media (max-width: 1000px){
+    .header{
+        height: 5rem;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        gap: 7vw
+    }
+    #logo{
+        width: 10rem;
+    }
+
+    .nav{
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+    }
+    
+    .nav > * {
+        font-size: 3vw;
+        
+    }
+}

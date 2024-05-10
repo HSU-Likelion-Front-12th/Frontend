@@ -1,0 +1,31 @@
+  .cmt-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vh
+  }
+  
+  .cmt {
+      max-width: 80vw;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+  }
+
+  #cmt-title {
+
+  }
+
+  #cmt-body {
+    
+  }
+
+  #cmt-uploadTime {
+    font-size: 0.7rem;
+    color: grey;
+  }
+
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }

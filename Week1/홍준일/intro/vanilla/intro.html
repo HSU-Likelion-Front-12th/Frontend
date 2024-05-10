@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="intro.css">
+</head>
+
+<body>
+    <div class="overlay overlay-top"></div>
+    <div class="overlay overlay-bottom"></div>
+    <div class="line"></div>
+    <div class="counter-wrapper">
+        <h1 class="counter">
+            0
+        </h1>
+    </div>
+    <nav class="nav">
+        <div class="logo" data-target="home">
+            <img src="assets/PORTFOLIO.png" alt="">
+        </div>
+        <ul class="links">
+            <li data-target="home">Home</li>
+            <li data-target="about">About</li>
+            <li data-target="hobby">Hobby</li>
+        </ul>
+    </nav>
+    <section class="home">
+        <div class="section-wrapper">
+            <div class="intro-text">
+                <p>안녕하세요!</p>
+                <p>제 이름은 홍준일 입니다.</p>
+                <p>프론트엔드 개발자가 되고 싶어요.</p>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="section-wrapper">
+            <h1 class="section-title">About</h1>
+            <div class="about-content">
+                <div class="col-left">
+                    <div class="hero-img-wrapper">
+                        <img src="data:image/jpeg;base64,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" alt="">
+                    </div>
+                    <h2 class="myName">홍준일</h2>
+                    <div class="myInfo">
+                        <div class="info">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M33.9843 26.3957C33.7436 28.225 32.8452 29.9042 31.4569 31.1195C30.0686 32.3349 28.2854 33.0033 26.4403 33C15.7212 33 7.00001 24.2789 7.00001 13.5598C6.9967 11.7147 7.66515 9.93154 8.8805 8.54328C10.0959 7.15503 11.775 6.25664 13.6043 6.01593C14.0669 5.95944 14.5354 6.05408 14.9398 6.28571C15.3441 6.51734 15.6628 6.87354 15.8481 7.30114L18.6993 13.6665V13.6827C18.8412 14.01 18.8998 14.3673 18.8699 14.7228C18.8399 15.0783 18.7224 15.4208 18.5279 15.7198C18.5036 15.7563 18.4779 15.79 18.4509 15.8238L15.6402 19.1556C16.6513 21.2103 18.8006 23.3406 20.8823 24.3545L24.1683 21.5586C24.2005 21.5315 24.2343 21.5063 24.2695 21.483C24.5683 21.2838 24.912 21.1621 25.2696 21.1291C25.6271 21.0961 25.9873 21.1528 26.3175 21.294L26.335 21.3021L32.695 24.152C33.1234 24.3366 33.4804 24.655 33.7128 25.0594C33.9452 25.4639 34.0405 25.9327 33.9843 26.3957Z" fill="#BFC4D8"/>
+                              </svg>
+                              <span>010-8478-7112</span>
+                        </div>
+                        <div class="info">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M32.9231 9H7.07692C6.79131 9 6.51739 9.11589 6.31542 9.32218C6.11346 9.52847 6 9.80826 6 10.1V28.8C6 29.3835 6.22692 29.9431 6.63085 30.3556C7.03477 30.7682 7.58261 31 8.15385 31H31.8462C32.4174 31 32.9652 30.7682 33.3692 30.3556C33.7731 29.9431 34 29.3835 34 28.8V10.1C34 9.80826 33.8865 9.52847 33.6846 9.32218C33.4826 9.11589 33.2087 9 32.9231 9ZM31.8462 28.8H8.15385V12.6011L19.2717 23.0112C19.4704 23.1975 19.7303 23.3009 20 23.3009C20.2697 23.3009 20.5296 23.1975 20.7283 23.0112L31.8462 12.6011V28.8Z" fill="#BFC4D8"/>
+                              </svg>
+                              <span>grt1022rt@naver.com</span>
+                        </div>
+                        <div class="info">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M20 5C16.8185 5.00354 13.7684 6.2464 11.5187 8.45591C9.26905 10.6654 8.00361 13.6611 8 16.7858C8 26.8708 18.9091 34.4873 19.3741 34.8061C19.5575 34.9323 19.776 35 20 35C20.224 35 20.4425 34.9323 20.6259 34.8061C21.0909 34.4873 32 26.8708 32 16.7858C31.9964 13.6611 30.731 10.6654 28.4813 8.45591C26.2316 6.2464 23.1815 5.00354 20 5ZM20 12.5001C20.863 12.5001 21.7067 12.7514 22.4243 13.2224C23.1419 13.6933 23.7012 14.3626 24.0315 15.1457C24.3617 15.9289 24.4482 16.7906 24.2798 17.6219C24.1114 18.4533 23.6958 19.2169 23.0856 19.8163C22.4753 20.4157 21.6978 20.8239 20.8513 20.9892C20.0048 21.1546 19.1275 21.0697 18.3301 20.7454C17.5328 20.421 16.8513 19.8717 16.3718 19.1669C15.8923 18.4621 15.6364 17.6335 15.6364 16.7858C15.6364 15.6492 16.0961 14.5591 16.9144 13.7553C17.7328 12.9516 18.8427 12.5001 20 12.5001Z" fill="#BFC4D8"/>
+                              </svg>
+                              <span>서울특별시 중랑구 상봉동</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-right">
+                    <div class="info-box">
+                        <h2>Education</h2>
+                        <ul>
+                            <li>한성대학교 IT공대 2학년</li>
+                            <li>2021.03~2026.02</li>
+                        </ul>
+                    </div>
+                    <div class="info-box">
+                        <h2>Skils</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                            <li>C(못함)</li>
+                        </ul>
+                    </div>
+                    <div class="info-box">
+                        <h2>Work</h2>
+                        <ul>
+                            <li>프론트엔드 개발자</li>
+                        </ul>
+                    </div>
+                    <div class="info-box">
+                        <h2>Activities</h2>
+                        <ul>
+                            <li>멋쟁이사자처럼 12기</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hobby">
+        <div class="section-wrapper">
+            <h1 class="section-title">Hobby</h1>
+            <ul class="hobby-content">
+
+                <li class="hobby-item">
+                    <div class="hobby-title">운동</div>
+                    <div class="hobby-img-outer">
+                        <div class="hobby-img-wrapper">
+                            <img src="assets/img1.jpg" alt="">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="hobby-item">
+                    <div class="hobby-title">잠자기</div>
+                    <div class="hobby-img-outer">
+                        <div class="hobby-img-wrapper">
+                            <img src="assets/img2.jpg" alt="">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="hobby-item">
+                    <div class="hobby-title">유튜브 보기</div>
+                    <div class="hobby-img-outer">
+                        <div class="hobby-img-wrapper">
+                            <img src="assets/img3.jpg" alt="">
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="intro.js"></script>
+
+</html>

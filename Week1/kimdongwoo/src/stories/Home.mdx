@@ -1,0 +1,116 @@
+import { Canvas, Meta  } from '@storybook/blocks';
+import * as HomeStories from './Home.stories';
+
+<Meta of={HomeStories} />
+
+# Home Component
+
+이 컴포넌트는 기존 과제의 body에 해당 되는 컴포넌트이다. JSX에서는 body태그를 사용할 수 없다. 왜냐하면 JSX는 React 컴포넌트를 생성하는 것이고 body 태그는 HTML 문서의 최상위 레벨 요소이기 때문이다.
+
+<Canvas of={HomeStories.Template} />
+
+<details>
+<summary>분할 되기 전 컴포넌트 보기</summary>
+```
+import React from 'react';
+import '../test/hw/css/styled.css'; // CSS 파일 import
+
+import logo from '../img/logo.png'
+import subway1 from '../img/subway1.png'
+import subway2 from '../img/subway2.png'
+import subway3 from '../img/subway3.png'
+import subway4 from '../img/subway4.png'
+
+export default function Home() {
+  return (
+    <>
+      <header>
+        {/* <img src="./img/logo.png" alt="Subway Logo" /> */}
+        <img src={logo} alt='Subway Logo'></img>
+        {/* <title>subway</title> */}
+      </header>
+
+      <nav>
+        <div className="navContainer">
+          <div><strong>메뉴소개</strong></div>
+          <div><strong>이용방법</strong></div>
+          <div><strong>새소식</strong></div>
+          <div><strong>써브웨이</strong></div>
+          <div><strong>가맹점</strong></div>
+          <div><strong>온라인 주문</strong></div>
+        </div>
+      </nav>
+
+      <>
+        <section className="sec1">
+        </section>
+
+        <section className="sec2">
+          <div className="menu-explain">
+            <img src={subway1} alt="Subway 1" />
+            <br />
+            <strong>에그마요</strong>
+            <br />
+            <span>부드러운 달걀과 고소한 마요네즈가 만나 더 부드러운 스데디셀러</span>
+          </div>
+
+          <div className="menu-explain">
+            <img src={subway2} alt="Subway 2" />
+            <br />
+            <strong>이탈리안 비엠티</strong>
+            <br />
+            <span>페페로니,살라미 그리고 햄이 만들어내는 최상의 조화! 전세계가
+              사랑하는 써브웨이의 베스트셀러!</span>
+          </div>
+
+          <div className="menu-explain">
+            <img src={subway3} alt="Subway 3" />
+            <br />
+            <strong>비엘티</strong>
+            <br />
+            <span>오리지널 아메리칸 스타일 베이컨의 풍미와 바삭함 그래도..</span>
+          </div>
+
+          <div className="menu-explain">
+            <img src={subway4} alt="Subway 4" />
+            <br />
+            <strong>햄</strong>
+            <br />
+            <span>기본 중에 기본!
+              풍부한 햄이 만들어내는 입 안 가득 넘치는 맛의 향연</span>
+          </div>
+        </section>
+      </>
+    </>
+  );
+}
+
+```
+</details>
+<br/>
+<details>
+<summary>분할 된 후 컴포넌트 보기</summary>
+```
+import React from 'react';
+import '../test/hw/css/styled.css'; // CSS 파일 import
+
+import Header from './Header';
+import Nav from './Nav';
+import Menu from './Menu';
+
+export default function Home() {
+  return (
+    <>
+      <Header></Header>
+      <Nav></Nav>
+      <Menu></Menu>
+
+    </>
+  );
+}
+
+
+```
+</details>
+
+- [참고한 공식문서](http://localhost:6006/?path=/docs/components-home--docs)
