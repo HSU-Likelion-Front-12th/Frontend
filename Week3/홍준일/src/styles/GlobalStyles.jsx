@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import {createGlobalStyle} from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
     *{
@@ -26,21 +26,14 @@ const GlobalStyles = createGlobalStyle`
         list-style-type: none;
     }
 
-    button{
-        cursor: pointer;
-        text-align: center;
-        border-radius: 10px;
-        border: none;
+    main{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    input{
-        width: 352px;
-        height: 48px;
-        border-radius: 10px;
-        border: 1px solid #7A7485;
-        margin-bottom: 14px;
-        padding: 17px 20.2px 16px;
-    }
-`;
+`
 
 export default GlobalStyles;
