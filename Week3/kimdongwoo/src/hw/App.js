@@ -1,8 +1,9 @@
-import Main from "./hw/Main";
-import Storage from "./hw/Storage";
+//실습
+import Main from "./Main";
+import Storage from "./Storage";
 // Recoil 연습
-import Recoil from "./recoil/Recoil";
-import RecoilTest from "./recoilTest/Recoil";
+import Recoil from "../recoil/Recoil";
+import RecoilTest from "../recoilTest/Recoil";
 
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
