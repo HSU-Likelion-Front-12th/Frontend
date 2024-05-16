@@ -12,9 +12,9 @@ function Storage({ storeList, home }) {
                 <p>보관함</p>
                 <p onClick={home}>홈</p>
             </div>
-            {storeList.map((item) => {
+            {storeList.map((item, idx) => {
                 return (
-                    <Success userInput={item.content}>
+                    <Success key={idx} userInput={item.content}>
                     </Success>);
             })}
         </div>

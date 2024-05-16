@@ -15,6 +15,7 @@ function App() {
   const goHome = () => {
     navigate("/");
   }
+
   function addList() {
     const newItem = {
       id: Date.now(),
@@ -45,10 +46,11 @@ function App() {
     })
     setStoreList((prevList) => [...prevList, items])
   }
+
   function updateCheck(itemId) {
     setList((prevList) =>
       prevList.map((item) =>
-        item.id === itemId ? { ...item, isChecked: true } : item));
+        item.id === itemId ? { ...item, isChecked: !item.isChecked } : item));
   }
 
 
