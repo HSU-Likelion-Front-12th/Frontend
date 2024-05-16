@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+.Signup-container{
+    width: 393px;
+    height: 852px;
+    overflow: hidden;
+    background: #FFF;
+    text-align: center;
+}
+
+.Signup-title{
+    width: 393px;
+    height: 40px;
+    background: #FFF;
+    flex-shrink: 0;
+    color: #1D1927;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+
+.Signup-line{
+    margin-bottom: 30px;
+}
+
+.input{
+    width: 352px;
+    height: 48px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    color: #B4B4B4;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 10px;
+    border: 1px solid #7A7485;
+    margin-bottom: 15px;
+}
+
+.input:focus,
+.input:not(:placeholder-shown){
+    color: #000;
+}
+
+.Signup-button{
+    width: 352px;
+    height: 48px;
+    border-radius: 10px;
+    background: #0028DA;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    margin: 0;
+    border: none;
+}

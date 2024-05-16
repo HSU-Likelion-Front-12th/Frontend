@@ -1,0 +1,58 @@
+.main-container{
+    width: 393px;
+    height: 852px;
+    overflow: hidden;
+    background: #FFF;
+    text-align: center;
+}
+
+.main-title{
+    width: 393px;
+    height: 40px;
+    background: #FFF;
+    flex-shrink: 0;
+    color: #1D1927;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+
+.main-image{
+    margin-top: 34px;
+    margin-bottom: 30px;
+}
+
+.signin-button{
+    width: 352px;
+    height: 57px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    background: #FFF;
+    color: #1D1927;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.signup-button{
+    width: 352px;
+    height: 57px;
+    border-radius: 10px;
+    background: #0028DA;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    border: none;
+}

@@ -1,0 +1,75 @@
+.LoginMain-container{
+    width: 393px;
+    height: 852px;
+    overflow: hidden;
+    background: #FFF;
+    text-align: center;
+}
+
+.LoginMain-title{
+    width: 393px;
+    height: 40px;
+    background: #FFF;
+    flex-shrink: 0;
+    color: #1D1927;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+
+.LoginMain-image{
+    margin-top: 34px;
+    margin-bottom: 30px;
+}
+
+.change-button{
+    width: 352px;
+    height: 57px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    background: #FFF;
+    color: #1D1927;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.logout-button{
+    width: 352px;
+    height: 57px;
+    border-radius: 10px;
+    background: #0028DA;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 15px;
+    border: none;
+}
+
+.unregister-button{
+    width: 352px;
+    height: 57px;
+    border-radius: 10px;
+    background: #DA0000;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    border: none;
+}
