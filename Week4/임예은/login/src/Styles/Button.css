@@ -1,0 +1,28 @@
+.button-wrap{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+}
+
+.button{
+    /* todo */
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22rem;
+    border-radius: 0.625rem;
+    border: 1px solid #7A7485;
+}
+
+.button > span {
+    /* todo */
+    color: #FFF;
+    text-align: enter;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
