@@ -1,0 +1,135 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main {
+  width: 24.5625rem;
+  height: 53.25rem;
+  text-align: center;
+}
+
+hr {
+  margin-bottom: 2.13rem;
+}
+
+.title {
+  color: #1d1927;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 24.5625rem;
+  height: 4.25rem;
+  flex-shrink: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login {
+  width: 22rem;
+  height: 3.5625rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  border: 1px solid #000;
+  margin-bottom: 0.87rem;
+  margin-top: 1.87rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1d1927;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.signup {
+  width: 22rem;
+  height: 3.5625rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: #0028da;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.exit {
+  width: 22rem;
+  height: 3.5625rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: #da0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 0.88rem;
+}
+
+input {
+  width: 22rem;
+  height: 3rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  border: 1px solid #7a7485;
+  margin-bottom: 1.25rem;
+}
