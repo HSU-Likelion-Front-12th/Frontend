@@ -1,81 +1,39 @@
-import { Link, Route, Routes } from "react-router-dom";
-import Storage from "./components/Storage";
-import { styled } from "styled-components";
-import GlobalStyles from "./styles/GlobalStyles.jsx";
-import TodoTemplete from "./components/TodoTemplete.jsx";
-import { TodoProvider } from "./TodoContext.jsx";
-
-const Buttons = styled.div`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  
-  button{
-        color: #4D869C;
-        background-color: #ffffff;   
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        border-radius: .5rem;
-        padding: 2rem 3rem;
-        font-size: 2rem;
-        &:hover{
-          background-color:#F0F0F1;
-        }
-    }
-
-    button:active{
-        background-color: #d4d4d4bc;
-    }
-`;
-
-const TodoTemplateBlock = styled.div`
-  width: 512px;
-  height: 768px;
-
-  position: relative;
-  background: white;
-  border-radius: 16px;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, .8);
-
-  margin: 0 auto;
-
-  margin-top: 60px;
-  margin-bottom: 32px;
-  display: flex;
-  flex-direction: column;
-`;
+import { useState } from "react";
+import GlobalStyles from "./styles/GlobalStyles";
+import styled from "styled-components";
+import { Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import LoginPage from "./components/LoginPage";
+import SignUpPage from "./components/SignUpPage";
+import SignInPage from "./components/SignInPage";
+import SetPwPage from "./components/SetPwPage";
 
 function App() {
+
   return (
-    <TodoProvider>
+    <>
       <GlobalStyles />
-      <main>
-
-        <Buttons>
-
-          <Link to="todoTempelte">
-            <button>Todos</button>
-          </Link>
-          <Link to="storage">
-            <button>Storage</button>
-          </Link>
-
-        </Buttons>
-
-        <TodoTemplateBlock>
-          <Routes>
-            <Route path="/todoTempelte" element={<TodoTemplete />} />
-            <Route path="/storage" element={<Storage />} />
-          </Routes>
-        </TodoTemplateBlock>
-
-      </main>
-    </TodoProvider>
+      <LoginTemplete>
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/loginPage" element={<LoginPage />}/>
+          <Route path="/signUpPage" element={<SignUpPage />}/>
+          <Route path="/signInPage" element={<SignInPage />} />
+          <Route path="/setPwPage" element={<SetPwPage />} />
+        </Routes>
+      </LoginTemplete>
+    </>
   );
 }
+
+const LoginTemplete = styled.div`
+  width: 393px;
+  height: 852px;
+  position: absolute;
+  border: 1px solid #7A7485;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+`;
 
 export default App;
