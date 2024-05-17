@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+}  
+.img-container {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.bugi {
+    width: 20vw;
+    height: 30vh;
+}
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+}
+.login-button {
+    height: 6vh;
+    width: calc(100% - 1rem);
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 0.5rem;
+    border-width: thin;
+}
+
+.join-button {
+    height: 6vh;
+    width: calc(100% - 1rem);
+    background-color: #0028DA;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 0.5rem;
+    border-width: thin;
+}
