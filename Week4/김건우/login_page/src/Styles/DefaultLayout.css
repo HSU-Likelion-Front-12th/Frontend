@@ -1,0 +1,36 @@
+.title-container{
+    border-bottom: 1px solid black;
+    display: flex;
+    padding: 1.37rem 11.69rem 1.37rem 11.69rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.title-container > span{
+    display: block;
+    color: #1D1927;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.img-bugi-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.1rem;
+    margin-bottom: 1.8rem;
+}
+.img-bugi{
+    object-fit: contain;
+    width: 9.5rem;
+    height: 10rem;
+}
+.img-bugi > img{
+    width: 9.5rem;
+    height: 10rem;
+}
