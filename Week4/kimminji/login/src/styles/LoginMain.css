@@ -1,0 +1,54 @@
+.header {
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+}
+.img-container {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bugi {
+    width: 20vw;
+    height: 30vh;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+}
+.change-button {
+    height: 6vh;
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 0.5rem;
+    border-width: 1px;
+    border-style: solid;
+}
+.logout-button {
+    height: 6vh;
+    background-color: #DA0000;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 0.5rem;
+    border-width: 1px;
+    border-style: solid;
+}
+.delete-button {
+    height: 6vh;
+    background-color: #0028DA;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 0.5rem;
+    border-width: 1px;
+    border-style: solid;
+}

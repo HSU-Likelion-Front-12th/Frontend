@@ -1,0 +1,34 @@
+.header {
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+  }
+  
+  .input-field {
+    display: block;
+    height: 5vh;
+    color:black;
+    border-radius: 10px;
+    margin: 0.5rem;
+    border-width: thin;
+  }
+  
+  .button {
+    height: 5vh;
+    background-color: #0028DA;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 0.5rem;
+    border-width: thin;
+  }
+  
