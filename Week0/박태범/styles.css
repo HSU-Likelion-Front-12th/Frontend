@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  color: #000;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+a img {
+  width: 270px;
+  height: 60px;
+}
+
+nav {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+  text-align: center; /* 내부 텍스트를 가운데 정렬 */
+  background: #4a86ff;
+}
+
+.container2 {
+  width: 100%;
+  height: 1765px;
+  background: #f3f5ff;
+}
+
+.container p {
+  margin: 0; /* p 태그의 margin 제거 */
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%; /* 120px */
+}
+
+.subtitle {
+  color: #4a86ff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin: 0;
+  padding-top: 60px;
+  margin-bottom: 60px;
+}
+
+.profile {
+  width: 380px;
+  height: 498px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 1px solid #ebedf8;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.myprofile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.myprofile img {
+  width: 196.078px;
+  height: 200px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  fill: #ebedf8;
+  margin-top: 30px;
+}
+
+.myprofile span {
+  color: #4a86ff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.profileContainer {
+  display: flex;
+  width: 380px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.profileContainer p {
+  color: #484a64;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.icon {
+  margin-left: 40px;
+  margin-right: 15px;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+}
+
+.infoContainer {
+  display: flex;
+}
+
+.info span {
+  color: #000;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.info p {
+  color: #626682;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 34px */
+  margin-bottom: 0;
+}
+.infoLeftContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 180px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+}
+
+.infoRightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.hobby .subtitle {
+  margin-top: 200px;
+}
+
+.hobbys {
+  display: flex;
+  justify-content: center;
+}
+
+.hobbyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  width: 380px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.hobbyContainer p {
+  text-align: center;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hobbybox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px 16px 0px 0px;
+  background: #4a86ff;
+  width: 380px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.imgbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  height: 377px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 16px 16px;
+  border: 1px solid #ebedf8;
+  background: #fff;
+}
+
+.hobbyContainer img {
+  width: 250px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 16px;
+}

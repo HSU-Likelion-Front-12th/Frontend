@@ -1,0 +1,436 @@
+div#outer {
+  display: inline-flex;
+  height: 1080px;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #fff;
+}
+body {
+  background-color: lightgray;
+}
+div#top {
+  width: 1920px;
+  height: 10%;
+  flex-shrink: 0;
+  background-color: #fff;
+}
+div#portfolo {
+  width: 340px;
+  height: 62.785px;
+
+  position: absolute;
+  left: 370px;
+  top: 29.367px;
+}
+.text {
+  text-transform: uppercase;
+}
+span#portfolo {
+  justify-content: center;
+  align-items: center;
+  color: #4a86ff;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  font-size: 50px;
+}
+
+#choices {
+  display: flex;
+  height: 59px;
+  align-items: flex-start;
+  gap: 32px;
+
+  position: absolute;
+  left: 1038px;
+
+  top: 31px;
+}
+
+div.inners {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+span.text {
+  color: #000;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.middle {
+  width: 1920px;
+  height: 70%;
+  flex-shrink: 0;
+  border: 1px solid #000;
+  background: #4a86ff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.introOuter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro {
+  position: absolute;
+  left: 350px;
+  top: 300px;
+
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%; /* 120px */
+}
+
+.bottom {
+  width: 1920px;
+  height: 150%;
+  flex-shrink: 0;
+  background: #f3f5ff;
+}
+
+.aboutText {
+  width: 254px;
+  height: 86px;
+
+  position: absolute;
+  left: 833px;
+  top: 992px;
+
+  color: #4a86ff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.profile {
+  width: 380px;
+  height: 505px;
+
+  position: absolute;
+  left: 370px;
+  top: 1138px;
+
+  border-radius: 16px;
+  border: 1px solid #ebedf8;
+  background: #fff;
+}
+
+.imgs {
+  width: 196px;
+  height: 202px;
+
+  position: absolute;
+  left: 100px;
+  top: 50px;
+
+  fill: #ebedf8;
+}
+
+.name {
+  width: 111px;
+  height: 48.608px;
+
+  position: absolute;
+  left: 145px;
+  top: 300px;
+}
+
+.naming {
+  width: 111px;
+  height: 48.608px;
+
+  flex-shrink: 0;
+  color: #4a86ff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.phone {
+  position: absolute;
+  left: 40px;
+  bottom: 100px;
+}
+
+#phonesize {
+  width: 40px;
+  height: 41px;
+}
+
+#number {
+  width: 119px;
+  height: 20px;
+  color: #484a64;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.mail {
+  position: absolute;
+  left: 40px;
+  bottom: 60px;
+}
+#mailsize {
+  width: 40px;
+  height: 40px;
+}
+#mail {
+  color: #484a64;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.location {
+  position: absolute;
+  left: 40px;
+  bottom: 15px;
+}
+.locaitonsize {
+  width: 40px;
+  height: 41px;
+}
+
+#location {
+  width: 244px;
+  height: 55px;
+  color: #484a64;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 27.2px */
+}
+
+#edu {
+  width: 190px;
+  height: 40px;
+  position: absolute;
+  left: 450px;
+
+  color: #000;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#eduintro {
+  width: 212px;
+  height: 103px;
+
+  position: absolute;
+  left: 450px;
+  top: 75px;
+
+  color: #626682;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 170%; /* 34px */
+}
+#work {
+  width: 100px;
+  height: 39px;
+
+  position: absolute;
+  left: 450px;
+  top: 400px;
+  color: #000;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#workintro {
+  width: 150px;
+  position: absolute;
+  left: 450px;
+  top: 485px;
+
+  color: #626682;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+#skill {
+  width: 110px;
+  height: 40px;
+
+  position: absolute;
+  left: 850px;
+
+  color: #000;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#skillintro {
+  width: 105px;
+  height: 138px;
+  position: absolute;
+  left: 850px;
+  top: 85px;
+
+  color: #626682;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 170%; /* 34px */
+}
+
+#activites {
+  width: 110px;
+  height: 40px;
+
+  position: absolute;
+  left: 850px;
+  top: 400px;
+
+  color: #000;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#activitesintro {
+  width: 200px;
+  position: absolute;
+  left: 850px;
+  top: 485px;
+
+  color: #626682;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 170%; /* 34px */
+}
+
+.hobbyText {
+  width: 253px;
+  height: 86px;
+
+  position: absolute;
+  left: 460px;
+  top: 700px;
+  color: #4a86ff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.hobby1 {
+  width: 380px;
+  height: 382px;
+
+  position: absolute;
+  top: 850px;
+
+  border-radius: 16px;
+  border: 1px solid #ebedf8;
+  background: #fff;
+}
+
+.hobby2 {
+  width: 380px;
+  height: 382px;
+
+  position: absolute;
+  left: 400px;
+  top: 850px;
+
+  border-radius: 16px;
+  border: 1px solid #ebedf8;
+  background: #fff;
+}
+.hobby3 {
+  width: 380px;
+  height: 382px;
+
+  position: absolute;
+  left: 800px;
+  top: 850px;
+
+  border-radius: 16px;
+  border: 1px solid #ebedf8;
+  background: #fff;
+}
+.up {
+  width: 380px;
+  height: 81px;
+
+  position: absolute;
+
+  border-radius: 16px 16px 0px 0px;
+  background-color: #4a86ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hobby1 {
+  width: 185px;
+  height: 40px;
+
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.imgouter {
+  width: 300px;
+  height: 222.786px;
+  position: absolute;
+  top: 150px;
+}
+#bojimg {
+  width: 300px;
+  height: 150px;
+  flex-shrink: 0;
+}
+#movieimg {
+  position: absolute;
+  left: 50px;
+  width: 70%;
+  height: 70%;
+}
