@@ -90,6 +90,8 @@ const CancelBtn = styled.button`
 `;
 
 function LoginMain() {
+  const [userId, setUserId] = useState('');
+
   const navigate = useNavigate();
 
   const Logout = () => {
@@ -101,10 +103,17 @@ function LoginMain() {
     navigate('/Change');
   };
 
+  useEffect(() => {
+    const storedUserId = sessionStorage.getItem('userId');
+    if (storedUserId) {
+      setUserId(storedUserId);
+    }
+  }, []);
+
   return (
     <>
       <PContainer>
-        <MainP>환영합니다.</MainP>
+        <MainP>{userId ? `${userId}님 환영합니다.` : null}</MainP>
       </PContainer>
       <MainLine />
       <ImgContainer>

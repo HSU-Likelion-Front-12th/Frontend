@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Config from '../config/config';
 // import API from '../API/api';
 
 const AllContainer = styled.div`
@@ -131,6 +132,38 @@ const Message = styled.p`
 `;
 
 function Signup() {
+  const [email, setEmail] = useState('');
+  const [userId, setUserId] = useState('');
+  const [phone, setPhone] = useState('');
+  const [password, setPassword] = useState('');
+  const [passwordConfirm, setPasswordConfirm] = useState('');
+
+  const handleRegister = async () => {
+    try {
+      const response = await fetch(`${Config.baseURL}/api/member/sign-up`, {
+        method: 'POST',
+        headers: Config.headers,
+        body: JSON.stringify({
+          email: email,
+          userId: userId,
+          phone: phone,
+          password: password,
+        }),
+      });
+
+      const data = await response.json();
+      console.log(data);
+
+      if (response.status === 201) {
+        alert('회원가입 완료');
+      } else {
+        alert('회원가입 실패');
+      }
+    } catch (error) {
+      alert('에러 발생');
+    }
+  };
+
   return (
     <>
       <AllContainer>
@@ -139,31 +172,51 @@ function Signup() {
         </PContainer>
         <MainLine />
         <FieldWithMessage>
-          <PWfield placeholder="이메일 ex) abc123@naver.com" />
+          <PWfield
+            placeholder="이메일 ex) abc123@naver.com"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
           <Message></Message>
         </FieldWithMessage>
 
         <FieldWithMessage>
-          <PWfield placeholder="아이디" />
+          <PWfield
+            placeholder="아이디"
+            value={userId}
+            onChange={(e) => setUserId(e.target.value)}
+          />
           <Message></Message>
         </FieldWithMessage>
 
         <FieldWithMessage>
-          <PWfield placeholder="전화번호" />
+          <PWfield
+            placeholder="전화번호"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+          />
           <Message></Message>
         </FieldWithMessage>
 
         <FieldWithMessage>
-          <PWfield placeholder="비밀번호" />
+          <PWfield
+            placeholder="비밀번호"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
           <Message></Message>
         </FieldWithMessage>
 
         <FieldWithMessage>
-          <PWfield placeholder="비밀번호 확인" />
+          <PWfield
+            placeholder="비밀번호 확인"
+            value={passwordConfirm}
+            onChange={(e) => setPasswordConfirm(e.target.value)}
+          />
           <Message></Message>
         </FieldWithMessage>
 
-        <Register>회원가입</Register>
+        <Register onClick={handleRegister}>회원가입</Register>
       </AllContainer>
     </>
   );

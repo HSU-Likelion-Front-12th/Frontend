@@ -7,8 +7,7 @@ import { MainLine } from '../main/main';
 import Bugi from '../images/Bugi.png';
 import { ImgContainer } from '../main/main';
 import { useEffect } from 'react';
-// import API from '../API/api';
-
+import Config from '../config/config';
 const AllContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -60,6 +59,35 @@ const ErrorMessage = styled.p`
 `;
 
 function Signin() {
+  const [userId, setUserId] = useState('');
+  const [password, setPassword] = useState('');
+  const navigate = useNavigate();
+
+  const handleLogin = async () => {
+    try {
+      const response = await fetch(`${Config.baseURL}/api/member/login`, {
+        method: 'POST',
+        headers: Config.headers,
+        body: JSON.stringify({
+          userId: userId,
+          password: password,
+        }),
+      });
+      const data = await response.json(); // Parse JSON body of the response
+      console.log(data);
+
+      if (response.status === 200) {
+        alert('로그인이 완료되었습니다.');
+        sessionStorage.setItem('userId', userId);
+        navigate('/LoginMain');
+      } else {
+        alert('로그인에 실패했습니다.');
+      }
+    } catch (error) {
+      alert('에러가 났습니다.');
+    }
+  };
+
   return (
     <AllContainer>
       <PContainer>
@@ -73,11 +101,20 @@ function Signin() {
           style={{ width: '153px', height: '166px' }}
         />
       </ImgContainer>
-      <PWfield placeholder="아이디" />
+      <PWfield
+        placeholder="아이디"
+        value={userId}
+        onChange={(e) => setUserId(e.target.value)}
+      />
       <br />
-      <PWfield placeholder="비밀번호" type="password" />
+      <PWfield
+        placeholder="비밀번호"
+        type="password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
       <br />
-      <Register>로그인</Register>
+      <Register onClick={handleLogin}>로그인</Register>
     </AllContainer>
   );
 }

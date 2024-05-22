@@ -4,6 +4,7 @@ import Main, { PContainer } from '../main/main';
 import { MainP } from '../main/main';
 import { MainLine } from '../main/main';
 import { useNavigate } from 'react-router-dom';
+import Config from '../config/config';
 // import API from '../API/api';
 
 const AllContainer = styled.div`
@@ -72,6 +73,67 @@ const Message = styled.p`
 `;
 
 function Change() {
+  const [userInfo, setUserInfo] = useState({
+    email: '',
+    username: '',
+    phone: '',
+  });
+
+  useEffect(() => {
+    const userId = sessionStorage.getItem('userId');
+
+    const fetchUserInfo = async () => {
+      if (userId) {
+        try {
+          const response = await fetch(
+            `${Config.baseURL}/api/member/default-information?userId=${userId}`
+          );
+
+          const data = await response.json();
+          console.log(data);
+
+          setUserInfo({
+            email: data.data.email,
+            username: data.data.userId,
+            phone: data.data.phone,
+          });
+        } catch (error) {
+          console.log(error);
+        }
+      }
+    };
+
+    fetchUserInfo();
+  }, []);
+
+
+  const [pw1, setPw1]=useState('');
+  const [pw2, setPw2]=useState('');
+
+  const handleChange = async() => {
+    try {
+      const response = await fetch(`${Config.baseURL}/api/member/password`, {
+        method: 'PUT',
+        headers: Config.headers,
+        body: JSON.stringify({
+          userId:userInfo.username,
+          pw1:pw1,
+          pw2:pw2,
+        }),
+      });
+
+      const data = await response.json();
+      console.log(data);
+
+      if (response.status === 200) {
+        alert('비밀번호 변경 완료');
+      } else {
+        alert('변경 실패');
+      }
+    } catch (error) {
+      alert('에러 발생');
+    }
+  }
   return (
     <>
       <AllContainer>
@@ -80,16 +142,16 @@ function Change() {
         </PContainer>
         <MainLine />
         <FieldWithMessage>
-          <PWfield type="email" readOnly />
+          <PWfield type="email" readOnly value={userInfo.email} />
         </FieldWithMessage>
         <FieldWithMessage>
-          <PWfield readOnly />
+          <PWfield readOnly value={userInfo.username} />
         </FieldWithMessage>
         <FieldWithMessage>
-          <PWfield type="tel" readOnly />
+          <PWfield type="tel" readOnly value={userInfo.phone} />
         </FieldWithMessage>
         <FieldWithMessage>
-          <PWfield placeholder="비밀번호" />
+          <PWfield placeholder="비밀번호" value={pw1} />
         </FieldWithMessage>
         <FieldWithMessage>
           <PWfield placeholder="비밀번호 확인" />
